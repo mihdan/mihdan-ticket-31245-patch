@@ -13,16 +13,16 @@
  *
  * @see https://core.trac.wordpress.org/ticket/31245
  */
-function mihdan-ticket-31245-patch( $option ) {
+function mihdan_ticket_31245_patch( $option ) {
     if ( ! wp_installing() ) {
         $alloptions = wp_load_alloptions(); //alloptions should be cached at this point
         if ( isset( $alloptions[ $option ] ) ) { //only if option is among alloptions
-            wp_cache_delete( 'alloptions', 'options' );
-		}
+		wp_cache_delete( 'alloptions', 'options' );
 	}
+    }
 }
-add_action( 'added_option',   'mihdan-ticket-31245-patch' );
-add_action( 'updated_option', 'mihdan-ticket-31245-patch' );
-add_action( 'deleted_option', 'mihdan-ticket-31245-patch' );
+add_action( 'added_option',   'mihdan_ticket_31245_patch' );
+add_action( 'updated_option', 'mihdan_ticket_31245_patch' );
+add_action( 'deleted_option', 'mihdan_ticket_31245_patch' );
 
 // eof;

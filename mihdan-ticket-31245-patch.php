@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Mihdan: Path for ticket 31245
+ * Plugin Name: Mihdan: Patch for ticket 31245
  * Description: WordPress-плагин, который убирает состояние гонки при обновлении кеша alloptions Edit
  * Github Plugin URI: https://github.com/mihdan/mihdan-ticket-31245-patch/
  * Version: 1.0

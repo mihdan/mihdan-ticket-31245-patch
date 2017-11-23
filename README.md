@@ -1,2 +1,2 @@
-# mihdan-ticket-31245-patch
-WordPress-плагин, который убирает состояние гонки при обновлении кеша alloptions
+# Mihdan: Path for ticket 31245
+WordPress-плагин, который убирает [состояние гонки](https://core.trac.wordpress.org/ticket/31245) при обновлении кеша alloptions
